@@ -1,12 +1,14 @@
 import * as chai from 'chai';
-import { HelloWorld } from '../main';
+import { construct2DRoom } from '../main';
 
 let expect = chai.expect;
 
-describe("Testing hello world", () => {
+describe('simple output', () => {
+  it('should return true', () => {
+    let result = construct2DRoom();
+    console.log(result);
+    expect(true)
 
-  it('should return a string', () => {
-    expect( HelloWorld("TypeScript") ).is.a('string');
   });
 
 });
